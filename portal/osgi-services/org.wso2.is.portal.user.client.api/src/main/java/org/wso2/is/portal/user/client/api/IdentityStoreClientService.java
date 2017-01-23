@@ -82,4 +82,17 @@ public interface IdentityStoreClientService {
      * @throws UserPortalUIException
      */
     List<Claim> getClaimsOfUser(String uniqueUserId, List<MetaClaim> metaClaims) throws UserPortalUIException;
+
+    /**
+     * List users by claim
+     * @param claimUri claim uri for filtering
+     * @param claimValue claim value
+     * @param offset starting point of user list
+     * @param length number of users to be returned
+     * @param domainName domain name
+     * @return list of users
+     * @throws UserPortalUIException
+     */
+    List<UUFUser> listUsers(String claimUri, String claimValue, int offset, int length,
+                            String domainName) throws UserPortalUIException;
 }

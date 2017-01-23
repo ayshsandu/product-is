@@ -501,3 +501,15 @@ label.error {
     background-color: #efefef;
 }
 
+.username-text, .question-no {
+    color:#555;
+}
+.dark .username-text, .dark .question-no {
+    color:#eee;
+}
+.recover-option-container hr{
+    border: 1px solid #fff;
+}
+.dark .recover-option-container hr{
+    border: 1px solid #2E2A2B;
+}
