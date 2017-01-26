@@ -20,6 +20,7 @@ package org.wso2.is.portal.user.test.ui;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.wso2.carbon.iam.user-portal.feature.pageObjects.SignInPage;
 
 public class SignInTest {
 
