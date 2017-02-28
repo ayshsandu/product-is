@@ -39,19 +39,20 @@
                         <div class="data-container">
                             <form class="form-horizontal">
                                 {{#if @queryParams.password}}
-                                    <h3>{{i18n "password.recovery"}}</h3>
+                                    <h3 id="password-recovery-email">{{i18n "password.recovery"}}</h3>
 
                                     <p>{{i18n "recovery.email.completed"}}</p>
                                 {{else}}
                                     {{#if @queryParams.username}}
-                                        <h3>{{i18n "username.recovery"}}</h3>
+                                        <h3 id="username-recovery">{{i18n "username.recovery"}}</h3>
 
                                         <p>{{i18n "recovery.username.completed"}}</p>
                                     {{/if}}
                                 {{/if}}
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                        <a href="{{@contextPath}}/" class="add-margin-top-2x">{{i18n
+                                        <a href="{{@contextPath}}/" class="add-margin-top-2x"
+                                           id="back-to-signin">{{i18n
                                         "back.to.sign.in"}}</a>
                                     </div>
                                 </div>

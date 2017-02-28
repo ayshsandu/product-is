@@ -23,18 +23,27 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-                            <div class="message message-danger">
-                                <h4><i class="icon fw fw-error"></i>{{i18n errorMessage}}</h4>
+                        <div class="message message-danger">
+                            <h4 id="message"><i class="icon fw fw-error"></i>{{i18n errorMessage}}</h4>
+                            <div style="padding-left: 25px;">
+                                {{#if code}}
+                                    <h5 id="code"><b>{{i18n "code"}} : {{code}}</b></h5>
+                                {{/if}}
 
-                                <div style="padding-left: 25px;">
-                                    <h5><b>{{i18n "code"}} : {{code}}</b></h5>
-
-                                    <!--<p style="white-space: pre-wrap;">{{!i18n (@params.message)}}</p>-->
+                                <!--<p style="white-space: pre-wrap;">{{!i18n (@params.message)}}</p>-->
                                 <!--</div>-->
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <a href="{{@contextPath}}/" class="add-margin-top-2x"
+                                           id="back-to-signin">{{i18n
+                                        "back.to.sign.in"}}</a>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 {{/fillZone}}
