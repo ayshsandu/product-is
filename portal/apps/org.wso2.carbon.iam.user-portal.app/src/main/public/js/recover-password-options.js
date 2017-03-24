@@ -35,7 +35,7 @@ $(function () {
             $('.sec-question-answer').removeAttr("required");
         }
         if(button === "security-question-recovery"){
-            $('.sec-question-answer').add("required");
+            $('.sec-question-answer').prop('required',true);;
         }
     });
 });
