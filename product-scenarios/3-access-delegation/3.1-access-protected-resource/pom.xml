@@ -18,19 +18,18 @@
 
     <parent>
         <groupId>org.wso2.is</groupId>
-        <artifactId>2.1-login-tests</artifactId>
+        <artifactId>access-delegation-tests</artifactId>
         <version>5.7.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>2.1.1-single-protocol-single-sign-on-tests</artifactId>
+    <artifactId>access-protected-resource</artifactId>
     <packaging>pom</packaging>
-    <name>Single protocol single sign-on</name>
-    <version>5.7.0</version>
+    <name>Access protected resource</name>
 
     <modules>
-        <module>2.1.1.1-sso-with-with-oauth</module>
+        <module>3.1.1-issue-access-token</module>
     </modules>
 
 </project>

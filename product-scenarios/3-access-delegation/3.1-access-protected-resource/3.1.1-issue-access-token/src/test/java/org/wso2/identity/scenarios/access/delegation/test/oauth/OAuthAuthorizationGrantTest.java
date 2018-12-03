@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.wso2.identity.scenarios.sso.test.oauth;
+package org.wso2.identity.scenarios.access.delegation.test.oauth;
 
 import org.apache.http.Header;
 import org.apache.http.HttpResponse;
