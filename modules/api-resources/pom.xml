@@ -576,6 +576,13 @@
                 <version>${identity.server.api.version}</version>
             </dependency>
 
+            <!--Agent API dependencies-->
+            <dependency>
+                <groupId>org.wso2.carbon.identity.agent</groupId>
+                <artifactId>org.wso2.carbon.identity.api.agent.v1</artifactId>
+                <version>${identity.agent.api.version}</version>
+            </dependency>
+
             <!-- Legacy API dependencies -->
             <dependency>
                 <groupId>org.wso2.carbon.identity.local.auth.fido</groupId>
