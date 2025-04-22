@@ -805,9 +805,8 @@
         <url-pattern>/idle-account-identification/v1/*</url-pattern>
     </servlet-mapping>
 
-
-    <!--  Servlet instance for agents/v1 -->
-    <servlet>
+     <!--  Servlet instance for agent/v1 -->
+     <servlet>
         <servlet-name>AgentV1Servlet</servlet-name>
         <servlet-class>
             org.wso2.carbon.identity.servlet.mgt.CustomCXFNonSpringJaxrsServlet
@@ -816,7 +815,7 @@
         <init-param>
             <param-name>jaxrs.serviceClasses</param-name>
             <param-value>
-                org.wso2.carbon.identity.api.agent.v1.AgentsApi
+                org.wso2.carbon.identity.api.agent.v1.DefaultApi
             </param-value>
         </init-param>
         <init-param>
